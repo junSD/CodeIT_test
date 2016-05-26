@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CodeIT</title>
+	<meta charset="UTF-8">
+	<title>JS</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/themes.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<link href='https://fonts.googleapis.com/css?family=Arimo:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/modal.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		$("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 1400,
+        namespace: "transparent-btns"
+      });
+	});
+	</script>
+</head>
+<body>
+	<!-- Modal Feedback -->
+	<div id="modal_form">
+		<span id="modal_close"><img src="img/X.jpg" alt="close"></span>
+		<!-- Кнoпкa зaкрыть -->
+		<div class="form-center">
+		<h1>FEEDBACK</h1>
+		<form action="example.php" method="get" name="formFeedback">
+			<div class="centergood"><label for="name">Name</label>
+			<p><input class="input" type="text" name="name" id="name" size="30" maxlength="10" required></p>
+			</div>
+			<div class="centergood"><p class="phone"><label for="phone">Phone</p></label>
+			<p><input class="input" type="text" name="phone" id="phone" size="30" maxlength="10" required></p>
+			</div>
+			<div class="centergood"><p class="email"><label for="email">Email</p></label>
+			<p><input class="input" type="text" name="email" id="email" size="30" maxlength="10" required></p>
+			</div>
+			<div class="centergood"><p class="textBox"><label for="text">Text</label></p>
+			<p><textarea name="text" cols="50" rows="6" id="text"></textarea></p>
+			</div>
+			<div class="centergood"><input type="image" src="img/feedback-button.jpg" alt="Submit">
+			</div>
+		</form>
+		</div>
+	</div>
+	<div id="overlay"></div>
+	<!-- Пoдлoжкa -->
+
+	<div class="container">
+		<header>
+			<div class="positioner">
+				<div class="column-promo">
+					<div class="head-codeit">
+						<a href="#">
+							<img src="img/header-codeIT-logo.png" alt="code-it" width="200" height="47"></a>
+					</div>
+				</div>
+				<div class="column-promo1">
+					<div class="text">
+						<p>
+							<span>+3 (050) 777 77 77</span>
+						</p>
+						<p>
+							<span>+3 (050) 777 77 77</span>
+						</p>
+
+					</div>
+					<div class="form">
+						<form action="example.php" method="get">
+							<input id="go" type="image" src="img/header-button.png" alt="Feedback"></form>
+					</div>
+				</div>
+			</div>
+
+			<div class="centeredmenu">
+				<ul>
+					<li>
+						<a href="#">HOME</a>
+					</li>
+					<li>
+						<a href="#">CATALOG</a>
+					</li>
+					<li>
+						<a href="#">SHIPPING AND PAYMENT</a>
+					</li>
+					<li>
+						<a href="#">PRICE</a>
+					</li>
+					<li>
+						<a href="#">CONTACTS</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="rslides_container">
+				<ul class="rslides" id="slider2">
+					<li>
+						<img src="img/header-slider-main.jpg" alt=""></li>
+					<li>
+						<img src="img/header-slider-main.jpg" alt=""></li>
+					<li>
+						<img src="img/header-slider-main.jpg" alt=""></li>
+				</ul>
+			</div>
+		</header>
+		<!-- header -->
+
+		<div class="content">
+			<div class="positioner">
+				<ul class="menu-under">
+					<li>
+						<a href="#">
+							<span>Home</span>
+						</a>
+						<img src="img/upper-content-arrow-menu.png" alt="arrow"></li>
+					<li>
+						<a href="#">
+							<span>Catalog</span>
+							<img src="img/upper-content-arrow-menu.png" alt="arrow"></a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Caregory Name</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- menu-gorizontal -->
+			<div class="positioner">
+				<div class="leftside">
+					<ul id="menu-left">
+						<li>
+							<span>Cars</span>
+							<ul>
+								<li>
+									<a href="#">Cars1</a>
+								</li>
+								<li>
+									<a href="#">Cars2</a>
+								</li>
+								<li>
+									<a href="#">Cars3</a>
+								</li>
+								<li>
+									<a href="#">Cars4</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span>Household Appliances</span>
+							<ul>
+								<li>
+									<a href="#">Microwaves</a>
+								</li>
+								<li>
+									<a href="#">Fridges</a>
+								</li>
+								<li>
+									<a href="#">Посудомоечные машины</a>
+								</li>
+								<li>
+									<a href="#">Dishwashers</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span>Mobile Equuipment</span>
+							<ul>
+								<li>
+									<a href="#">1</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span>Computers</span>
+							<ul>
+								<li>
+									<a href="#">2</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span>Clothing</span>
+							<ul>
+								<li>
+									<a href="#">3</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<span>Real Estate</span>
+							<ul>
+								<li>
+									<a href="#">4</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="price">
+						<div class="img-price">
+							<a href="#">
+								<img src="img/price.png" alt="price"></a>
+						</div>
+
+						<div class="text-price">Price list</div>
+					</div>
+				</div>
+				<!-- left column -->
+				<div class="rightside">
+					<div class="microwave-box">
+						<div class="microwave">
+							<img src="img/microwave.jpg" alt="microwave" width="210" height="209">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.
+							</p>
+						</div>
+						<div>
+							<span>$550.95</span>
+							<img class="basket" src="img/basket.png" alt="basket" width="28" height="21"></div>
+					</div>
+
+					<div class="microwave-box">
+						<div class="microwave">
+							<img src="img/microwave.jpg" alt="microwave" width="210" height="209">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.
+							</p>
+						</div>
+						<div>
+							<span>$350.95</span>
+							<img class="basket" src="img/basket.png" alt="basket" width="28" height="21"></div>
+					</div>
+
+					<div class="microwave-box">
+						<div class="microwave">
+							<img src="img/microwave.jpg" alt="microwave" width="210" height="209">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.
+							</p>
+						</div>
+						<div>
+							<span>$850.95</span>
+							<img class="basket" src="img/basket.png" alt="basket" width="28" height="21"></div>
+					</div>
+
+					<div class="microwave-box">
+						<div class="microwave">
+							<img src="img/microwave.jpg" alt="microwave" width="210" height="209">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.
+							</p>
+						</div>
+						<div>
+							<span>$550.95</span>
+							<img class="basket" src="img/basket.png" alt="basket" width="28" height="21"></div>
+					</div>
+
+					<div class="microwave-box">
+						<div class="microwave">
+							<img src="img/microwave.jpg" alt="microwave" width="210" height="209">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.
+							</p>
+						</div>
+						<div>
+							<span>$350.95</span>
+							<img class="basket" src="img/basket.png" alt="basket" width="28" height="21"></div>
+					</div>
+
+					<div class="microwave-box">
+						<div class="microwave">
+							<img src="img/microwave.jpg" alt="microwave" width="210" height="209">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur doler adipiscing elit.
+							</p>
+						</div>
+						<div>
+							<span>$850.95</span>
+							<img class="basket" src="img/basket.png" alt="basket" width="28" height="21"></div>
+					</div>
+					<div class="pagination">
+						<ul>
+							<li>
+								<a href="#">
+									<span>1</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>2</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>3</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>4</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>5</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>6</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>7</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="up-text">
+						<div class="left-col">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper lacinia auctor. Aliquam vitae mi ornare, tincidunt risus sed, euismod nisl. Nullam imperdiet nisi ut est imperdiet posuere. Cras sodales molestie enim eget porta. Vestibulum scelerisque blandit pulvinar. Donec condimentum malesuada neque a blandit. In sodales ex ac pharetra dictum. In interdum facilisis justo. Maecenas sit amet mi vitae purus ultrices fermentum. In vel orci erat. Suspendisse potenti. Donec arcu nunc, imperdiet id neque nec, mollis viverra nisl. Fusce egestas ligula vitae tristique dignissim.
+							</p>
+						</div>
+						<div class="right-col">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper lacinia auctor. Aliquam vitae mi ornare, tincidunt risus sed, euismod nisl. Nullam imperdiet nisi ut est imperdiet posuere. Cras sodales molestie enim eget porta. Vestibulum scelerisque blandit pulvinar. Donec condimentum malesuada neque a blandit. In sodales ex ac pharetra dictum. In interdum facilisis justo. Maecenas sit amet mi vitae purus ultrices fermentum. In vel orci erat. Suspendisse potenti. Donec arcu nunc, imperdiet id neque nec, mollis viverra nisl. Fusce egestas ligula vitae tristique dignissim.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- right column -->
+			</div>
+			<!-- two column -->
+
+		</div>
+		<!-- content -->
+		<div style="width:100%; height:1px; clear:both;"></div>
+		<footer>
+			<div class="positioner">
+				<div class="column-footLogo">
+					<div class="head-codeit">
+						<a href="#">
+							<img src="img/footer-logo.png" alt="footer-logo" width="139" height="35"></a>
+					</div>
+				</div>
+				<div class="column-footMenu">
+					<ul>
+						<li>
+							<a href="#">HOME</a>
+						</li>
+						<li>
+							<a href="#">CATALOG</a>
+						</li>
+						<li>
+							<a href="#">SHIPPING AND PAYMENT</a>
+						</li>
+						<li>
+							<a href="#">PRICE</a>
+						</li>
+						<li>
+							<a href="#">CONTACTS</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- Container -->
+<script type="text/javascript">
+$(document).ready(function() {
+$("#menu-left ul").hide();
+$("#menu-left li span").click(function() {
+    $("#menu-left ul:visible").slideUp("normal");
+    if (($(this).next().is("ul")) && (!$(this).next().is(":visible"))) {
+        $(this).next().slideDown("normal");
+    }
+});
+});
+</script>
+</body>
+</html>
